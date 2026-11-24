@@ -1,0 +1,11 @@
+project: savantenvs/tiny_tracer
+target: fuzz_exports
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_exports/testsuite
+
+cmds:
+  - cmd: /mayhem/fuzz_exports
+    libfuzzer: true
+    timeout: 5

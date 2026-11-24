@@ -1,0 +1,3 @@
+kernel32;Sleep;1
+<SYSCALL>;0x55;4
+advapi32;RegOpenKeyExW;5
